@@ -131,7 +131,7 @@ switch (value) {
   std::cout<<"work correctly with const "<<std::endl;
   break;
   default:
-  std::cout<<"default"<<std::endl;}*/
+  std::cout<<"default"<<std::endl;}
 
 
 for(int i=0;i<11;i++)
@@ -141,7 +141,7 @@ for(int i=0;i<11;i++)
 
 
 
-int x =5;
+int x2 =5;
 while(x){
   std::cout<<x--<<std::endl;
 }
