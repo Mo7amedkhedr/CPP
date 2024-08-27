@@ -49,7 +49,8 @@ int temp=10;
 [](int num3){
    // std::cout<<num3 + temp <<std::endl; // ERROR scope of lambda is standalone scope
     
-}(3);
+}(3);   
+
 
 
 int temp2=10;
