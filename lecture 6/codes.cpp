@@ -104,37 +104,37 @@ int main()
    Data d1("hellollkkk",5);
    Data d2 = 100_mt;
    std::cout<<d2.msg<<" "<<std::endl;
- //  std::string message = d1.to_string();
-   /*std::string message = d1;
-   std::cout<<message<<std::endl;*/
+  std::string message = d1.to_string();
+   std::string message = d1;
+   std::cout<<message<<std::endl;
   
- //  Data d2 = std::string ("welcommmmme");
-  /*Data d2 = Data(std::string ("welcommmmme"));
-   int x3 = 3 +d1;*/
-   //int x = std::string("mohamed") + d1;//operator+(std::string, d1)
-  // int x2 = d1+ std::string("khedr"); //d1.operator(std::string)
-  /* LCD lcd1("hello world");
+   Data d2 = std::string ("welcommmmme");
+  Data d2 = Data(std::string ("welcommmmme"));
+   int x3 = 3 +d1;
+   int x = std::string("mohamed") + d1;//operator+(std::string, d1)
+   int x2 = d1+ std::string("khedr"); //d1.operator(std::string)
+   LCD lcd1("hello world");
    LCD lcd2(" welcome");
-   LCD lcd3("mohamed");*/
+   LCD lcd3("mohamed");
 
-    //Data data1{"hello world",0};
-  // data1("khedr",2);
-   //Data("hello",0)(); // temporary instance
-   /*  std::vector<Data >v{
+    Data data1{"hello world",0};
+   data1("khedr",2);
+   Data("hello",0)(); // temporary instance
+     std::vector<Data >v{
         {"hello world",0},{"khedr",2},{"mohamed",1}
-    };*/
-  //  std::sort(v.begin(),v.end());
-    //std::cout<<v[0].cursor<<std::endl;
-   //std::cout<<v[1].cursor<<std::endl;
-    //std::cout<<v[2].cursor<<std::endl;
-  //  std::copy(v.begin(),v.end(),std::ostream_iterator<Data>(std::cout,"\n"));
+    };
+  std::sort(v.begin(),v.end());
+    std::cout<<v[0].cursor<<std::endl;
+   std::cout<<v[1].cursor<<std::endl;
+    std::cout<<v[2].cursor<<std::endl;
+    std::copy(v.begin(),v.end(),std::ostream_iterator<Data>(std::cout,"\n"));
 
-    /*
+    
 LCD lcd1{"hello world"};
 LCD lcd2{" welcome"};
 LCD lcd3{"mohamed"};
-//LCD lcd3 = lcd1 + lcd2;
-//lcd3.display();
+LCD lcd3 = lcd1 + lcd2;
+lcd3.display();
 std::string Message = " from egypt ";
 lcd3.msg += Message;
 lcd3.display();
@@ -151,5 +151,5 @@ else
 ++lcd1;
  std::cout << lcd1.cursor << std::endl;
  lcd2++;
- std::cout << lcd2.cursor << std::endl;*/
+ std::cout << lcd2.cursor << std::endl;
 }
