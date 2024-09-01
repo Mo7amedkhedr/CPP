@@ -135,7 +135,7 @@ int main(){
 
 
 
-    /*std::map<TrafficLight, std::pair<TrafficLight,  Istate*>> stateMachine ={
+    std::map<TrafficLight, std::pair<TrafficLight,  Istate*>> stateMachine ={
         {TrafficLight::RED, {TrafficLight::YELLOW, new YellowState}},
         {TrafficLight::YELLOW, {TrafficLight::GREEN, new GreenState}},
         {TrafficLight::GREEN, {TrafficLight::RED, new RedState}}
@@ -152,7 +152,7 @@ int main(){
             break;
         }
     }
-*/
+
 
 
 
@@ -161,7 +161,7 @@ int main(){
 
 
  // in multimap must check because no indexing you can use it by making loop
- /**std::multimap<std::string, std::string>db2{
+ std::multimap<std::string, std::string>db2{
     {"name","khedr"},
     {"age","22"},
     {"city","mansoura"},
@@ -181,8 +181,8 @@ int main(){
     std::cout<<it->first<<" : "<<it->second<<std::endl;
   // count how many entries with "name" as "mohamed"
   std::cout<<"count: "<<std::distance(range.first, range.second)<<std::endl;
- */
- /*std::unordered_map<std::string, std::vector<std::string>> shopping
+ 
+ std::unordered_map<std::string, std::vector<std::string>> shopping
  {
     {"apple", {"red", "green", "yellow"}},
     {"banana", {"yellow", "yellow", "yellow"}},
@@ -194,28 +194,13 @@ int main(){
     for(auto &fruit : i.second)
       std::cout<<fruit<<" ";
     std::cout<<std::endl;
-  }*/
+  }
  
 
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  /*
+  
   //map , multimap ====> tree
   // unordered map ====> hash table
   std::map<std::string , std::string>db{
@@ -225,24 +210,24 @@ int main(){
     {"country","Egypt"}
   };
   db.insert(std::make_pair("email", "mohamed@gmail.com"));
-  db.insert(std::make_pair("phone", "0123456789"));*/
-  /*std::cout<<"nmae : "<<db["name"]<<std::endl;
+  db.insert(std::make_pair("phone", "0123456789"));
+  std::cout<<"nmae : "<<db["name"]<<std::endl;
   std::cout<<"email : "<<db["email"]<<std::endl;
-  std::cout<<"phone : "<<db["phone"]<<std::endl;*/
-  /*std::cout<<"------------------------------------------"<<std::endl;
+  std::cout<<"phone : "<<db["phone"]<<std::endl;
+  std::cout<<"------------------------------------------"<<std::endl;
   for(auto &item : db)
     std::cout<<item.first<<" : "<<item.second<<std::endl;
   std::cout<<"------------------------------------------"<<std::endl;
   std::cout<<"size: "<<db.size()<<std::endl;
   db["age"]="23";
   std::cout<<db.empty()<<std::endl;
-  auto it =db.find("phone");
-  if(it!=db.end()){
+  auto it3 =db.find("phone");
+  if(it3 !=db.end()){
     std::cout<<"found : "<<it->first<<" : "<<it->second<<std::endl;
   }
   else{
     std::cout<<"not found"<<std::endl;
-  }*/
+  }
 
 
 }
